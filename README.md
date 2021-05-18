@@ -57,6 +57,6 @@ I can use [this W3Schools How TO](https://www.w3schools.com/howto/howto_js_slide
 
 Here's a list of stuff I need to do! I'll add stuff as I think of it and cross stuff off when I complete them.
 
-- [] Create the HTML, CSS and JS files.
-- [] Import and adapt my HTML and CSS from [this repo where I was working on it before](https://github.com/lopezelpesado/old-website).
-- [] Build the menu system.
+- [ ] Create the HTML, CSS and JS files.
+- [ ] Import and adapt my HTML and CSS from [this repo where I was working on it before](https://github.com/lopezelpesado/old-website).
+- [ ] Build the menu system.
