@@ -24,3 +24,9 @@ I've created a card for my stream using Photoshop in this style and I want to re
 I wanted to go for a vertical menu bar similar to that found in Alien: Isolation where selecting the menu item on the left changes the content on the right:
 
 <img src="https://sm.pcmag.com/t/pcmag_uk/photo/a/alien-isol/alien-isolation-for-pc-old-computer_gvnd.1024.jpg" alt="A screenshot from the video game Alien: Isolation showing a green computer screen with white text on it."/>
+
+The content on the right will be scrollable so that you always have the menu bar and border fixed on screen.
+
+### Content
+
+There will be 4 main pages: a landing/home page, a bit about me and why I want to apply, a MTG life total app and a image carousel for my cats, Felt <img src="https://bit.ly/39Jb6o2" alt="A small picture of a black and white kitten's face mid yawn making it look like they are screaming."> and Noodle <img src="https://bit.ly/3tr02nI" alt="A small picture of a white kitten's face mid yawn making it look like they are screaming.">.
