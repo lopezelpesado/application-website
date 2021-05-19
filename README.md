@@ -62,3 +62,4 @@ Here's a list of stuff I need to do!
 - [x] Create the HTML, CSS and JS files.
 - [ ] Import and adapt my HTML and CSS from [this repo where I was working on it before](https://github.com/lopezelpesado/old-website).
 - [x] Build the menu system.
+- [ ] Put the menu along the bottom.
