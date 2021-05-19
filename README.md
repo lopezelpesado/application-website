@@ -29,9 +29,11 @@ I wanted to go for a vertical menu bar similar to that found in Alien: Isolation
 
 The content on the right will be scrollable so that you always have the menu bar and border fixed on screen.
 
+I'll design for mobile first so that by default the menu bar will be at the bottom of the screen flowing left to right with the content view above. If you are viewing on a large screen (by width) or rotate your mobile screen, it will switch to the menu bar on the left flowing top to bottom with content view on the right.
+
 ### Content
 
-There will be 4 main pages: a landing/home page, a bit about me and why I want to apply, a MTG life total app and a image carousel for my cats, Felt <img src="https://bit.ly/39Jb6o2" alt="A small picture of a black and white kitten's face mid yawn making it look like they are screaming."> and Noodle <img src="https://bit.ly/3tr02nI" alt="A small picture of a white kitten's face mid yawn making it look like they are screaming.">.
+There will be 4 pages: a landing/home page, a bit about me and why I want to apply, a MTG life total app and a image carousel for my cats, Felt <img src="https://bit.ly/39Jb6o2" alt="A small picture of a black and white kitten's face mid yawn making it look like they are screaming."> and Noodle <img src="https://bit.ly/3tr02nI" alt="A small picture of a white kitten's face mid yawn making it look like they are screaming.">.
 
 ### Functionality
 

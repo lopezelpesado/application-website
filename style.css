@@ -1,3 +1,15 @@
+html {
+    box-sizing: border-box;
+} /* Flexible border-box reset from: https://css-tricks.com/box-sizing/#universal-box-sizing-with-inheritance */
+
+*, *:before, *:after {
+    box-sizing: inherit;;
+} /* All elements (including pseudo elements) will inherit border-box */
+
 .menuContent {
     display: none;
-}
+} /* All sections will be hidden */
+
+#homeContent {
+    display: block;
+} /* Except the home section */
