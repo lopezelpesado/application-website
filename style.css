@@ -1,5 +1,9 @@
 :root {
     --streamGreen: hsl(121, 100%, 49%); /* Not far from chartreuse */
+    --borderWidth: 7px;
+    --boxShadowSize: 18px;
+    --inBoxShadowSize: -25px;
+    --textShadow: 20px;
 }
 
 html {
@@ -16,11 +20,14 @@ body {
     display: flex;
     flex-direction: column-reverse; /* Puts menu at the bottom */
     height: 100%;
-    border: var(--streamGreen, chartreuse);
-    border-width: 10px;
+    border: var(--streamGreen);
+    border-width: var(--borderWidth, 10px);
     border-style: solid;
-    color: var(--streamGreen, chartreuse);
+    color: var(--streamGreen);
     background-color: black;
+    font-family: 'VT323', monospace;
+    text-shadow: 0px 0px var(--textShadow) var(--streamGreen);
+    box-shadow: 0px 0px var(--boxShadowSize) 0px var(--streamGreen) inset;
 }
 
 nav {
@@ -28,28 +35,48 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: row;
-    border: var(--streamGreen, chartreuse);
-    border-width: 10px 0px 0px 0px;
+    border: var(--streamGreen);
+    border-width: var(--borderWidth, 10px) 0px 0px 0px;
     border-style: solid;
+    box-shadow: 0px var(--boxShadowSize) var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow top only */
 }
 
 .menuButton {
     width: 25%;
-    border: var(--streamGreen, chartreuse);
-    border-width: 0px 10px 0px 0px;
+    border: var(--streamGreen);
+    border-width: 0px var(--borderWidth, 10px) 0px 0px;
     border-style: solid;
     color: inherit;
     background-color: inherit;
+    font-family: inherit;
+    font-size: 80px;
+    text-shadow: inherit;
+    box-shadow: var(--boxShadowSize) 0px var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset, calc(-1 * var(--boxShadowSize)) 0px var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow left and right only */
+    letter-spacing: 10px;
+}
+
+.active {
+    font-weight: bolder;
+    text-shadow: 0px 0px calc(2 * var(--textShadow)) var(--streamGreen);
+    background-color: hsla(121, 100%, 49%, 0.2);
+}
+
+#homeMenu {
+    box-shadow: calc(-1 * var(--boxShadowSize)) 0px var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow right only */
 }
 
 #catsMenu {
-    border: var(--streamGreen, chartreuse);
+    border: var(--streamGreen);
     border-width: 0px 0px 0px 0px;
     border-style: solid;
+    box-shadow: var(--boxShadowSize) 0px var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow left only */
 }
 
 main {
-
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px calc(-1 * var(--boxShadowSize)) var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow bottom only */
 }
 
 .menuContent {
