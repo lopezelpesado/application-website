@@ -1,10 +1,56 @@
+:root {
+    --streamGreen: hsl(121, 100%, 49%); /* Not far from chartreuse */
+}
+
 html {
-    box-sizing: border-box;
-} /* Flexible border-box reset from: https://css-tricks.com/box-sizing/#universal-box-sizing-with-inheritance */
+    box-sizing: border-box; /* Flexible border-box reset */
+    height: 100%;
+}
 
 *, *:before, *:after {
-    box-sizing: inherit;;
-} /* All elements (including pseudo elements) will inherit border-box */
+    box-sizing: inherit; /* All elements (including pseudo elements) will inherit border-box */
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse; /* Puts menu at the bottom */
+    height: 100%;
+    border: var(--streamGreen, chartreuse);
+    border-width: 10px;
+    border-style: solid;
+    color: var(--streamGreen, chartreuse);
+    background-color: black;
+}
+
+nav {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: var(--streamGreen, chartreuse);
+    border-width: 10px 0px 0px 0px;
+    border-style: solid;
+}
+
+.menuButton {
+    width: 25%;
+    border: var(--streamGreen, chartreuse);
+    border-width: 0px 10px 0px 0px;
+    border-style: solid;
+    color: inherit;
+    background-color: inherit;
+}
+
+#catsMenu {
+    border: var(--streamGreen, chartreuse);
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+}
+
+main {
+
+}
 
 .menuContent {
     display: none;
@@ -13,3 +59,4 @@ html {
 #homeContent {
     display: block;
 } /* Except the home section */
+
