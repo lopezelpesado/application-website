@@ -77,6 +77,8 @@ main {
     display: flex;
     flex-direction: column;
     box-shadow: 0px calc(-1 * var(--boxShadowSize)) var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow bottom only */
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .menuContent {
@@ -86,4 +88,3 @@ main {
 #homeContent {
     display: block;
 } /* Except the home section */
-
