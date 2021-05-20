@@ -54,6 +54,7 @@ nav {
 }
 
 .menuButton {
+    height: 100%;
     width: 25%;
     border: var(--streamGreen);
     border-width: 0px var(--borderWidth, 10px) 0px 0px;
@@ -61,10 +62,11 @@ nav {
     color: inherit;
     background-color: inherit;
     font-family: inherit;
-    font-size: 80px;
+    font-size: 8vw;
     text-shadow: inherit;
     box-shadow: var(--boxShadowSize) 0px var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset, calc(-1 * var(--boxShadowSize)) 0px var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow left and right only */
     letter-spacing: 10px;
+    align-self: center;
 }
 
 .active {
@@ -95,8 +97,26 @@ main {
 
 .menuContent {
     display: none;
-} /* All sections will be hidden */
+    flex-direction: column;
+} /* All sections will be hidden on page load... */
 
 #homeContent {
-    display: block;
-} /* Except the home section */
+    display: flex;
+} /* ...except the home section */
+
+p {
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+h1 {
+    font-size: 8vw;
+    margin: 0 5vw 0 5vw;
+}
+
+img {
+    filter: saturate(0);
+    width: 80vw;
+    align-self: center;
+}

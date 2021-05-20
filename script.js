@@ -35,7 +35,7 @@ function removeActive () { // function to remove the active class from all menu 
 // Unhide selected section and add active class to menu button
 
 function revealSection (section) { // function to reveal the corresponding section of the clicked button
-    document.getElementsByClassName(section)[1].style.display = "block"; // sets display to block (revealing it) for the second element of all elements with the first class in the class list of the clicked button which is the corresponding section to that button
+    document.getElementsByClassName(section)[1].style.display = "flex"; // sets display to block (revealing it) for the second element of all elements with the first class in the class list of the clicked button which is the corresponding section to that button
 
     document.getElementsByClassName(section)[0].classList.add("active"); // gives the clicked button the active class
 }
