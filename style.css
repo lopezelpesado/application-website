@@ -4,6 +4,8 @@
     --boxShadowSize: 18px;
     --inBoxShadowSize: -25px;
     --textShadow: 20px;
+    --scanlineStrength: 5%;
+    --scanlineSize: 4px;
 }
 
 html {
@@ -28,6 +30,16 @@ body {
     font-family: 'VT323', monospace;
     text-shadow: 0px 0px var(--textShadow) var(--streamGreen);
     box-shadow: 0px 0px var(--boxShadowSize) 0px var(--streamGreen) inset;
+}
+
+html:before {
+    position: absolute;
+    content:"";
+    background: repeating-linear-gradient(0, hsl(0, 0%, 0%, var(--scanlineStrength)), hsl(0, 0%, 0%, var(--scanlineStrength)) var(--scanlineSize), hsl(0, 0%, 50%, var(--scanlineStrength)) var(--scanlineSize), hsl(0, 0%, 50%, var(--scanlineStrength)) calc(var(--scanlineSize) * 2)) ;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: 3;
 }
 
 nav {
