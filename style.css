@@ -73,16 +73,6 @@ nav {
     background-color: hsla(121, 100%, 49%, 0.2);
 }
 
-#homeMenu {
-
-}
-
-#catsMenu {
-    border: var(--streamGreen);
-    border-width: 0px 0px 0px 0px;
-    border-style: solid;
-}
-
 main {
     height: 100%;
     display: flex;
