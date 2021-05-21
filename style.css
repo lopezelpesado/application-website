@@ -60,7 +60,7 @@ nav {
     color: inherit;
     background-color: inherit;
     font-family: inherit;
-    font-size: 4vw;
+    font-size: 8vw;
     text-shadow: inherit;
     box-shadow: 0px 0px var(--boxShadowSize) 0px var(--streamGreen) inset;
     letter-spacing: 10px;
@@ -92,13 +92,13 @@ main {
 } /* ...except the home section */
 
 p {
-    font-size: 1vw;
+    font-size: 2vw;
     margin-left: 5vw;
     margin-right: 5vw;
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: 7vw;
     margin: 0 5vw 0 5vw;
 }
 
