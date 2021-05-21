@@ -29,7 +29,6 @@ body {
     background-color: black;
     font-family: 'VT323', monospace;
     text-shadow: 0px 0px var(--textShadow) var(--streamGreen);
-    box-shadow: 0px 0px var(--boxShadowSize) 0px var(--streamGreen) inset;
 }
 
 html:before {
@@ -50,7 +49,6 @@ nav {
     border: var(--streamGreen);
     border-width: var(--borderWidth, 10px) 0px 0px 0px;
     border-style: solid;
-    box-shadow: 0px var(--boxShadowSize) var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow top only */
 }
 
 .menuButton {
@@ -64,7 +62,7 @@ nav {
     font-family: inherit;
     font-size: 8vw;
     text-shadow: inherit;
-    box-shadow: var(--boxShadowSize) 0px var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset, calc(-1 * var(--boxShadowSize)) 0px var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow left and right only */
+    box-shadow: 0px 0px var(--boxShadowSize) 0px var(--streamGreen) inset;
     letter-spacing: 10px;
     align-self: center;
 }
@@ -76,21 +74,20 @@ nav {
 }
 
 #homeMenu {
-    box-shadow: calc(-1 * var(--boxShadowSize)) 0px var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow right only */
+
 }
 
 #catsMenu {
     border: var(--streamGreen);
     border-width: 0px 0px 0px 0px;
     border-style: solid;
-    box-shadow: var(--boxShadowSize) 0px var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow left only */
 }
 
 main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px calc(-1 * var(--boxShadowSize)) var(--boxShadowSize) calc(-1 * var(--boxShadowSize)) var(--streamGreen) inset; /* inset box shadow bottom only */
+    box-shadow: 0px 0px var(--boxShadowSize) 0px var(--streamGreen) inset;
     overflow-y: auto;
     overflow-x: hidden;
 }
