@@ -33,7 +33,7 @@ I'll design for mobile first so that by default the menu bar will be at the bott
 
 ### Content
 
-There will be 4 pages: a landing/home page, a bit about me and why I want to apply, a MTG life total app and a image carousel for my cats, Felt <img src="https://bit.ly/39Jb6o2" alt="A small picture of a black and white kitten's face mid yawn making it look like they are screaming."> and Noodle <img src="https://bit.ly/3tr02nI" alt="A small picture of a white kitten's face mid yawn making it look like they are screaming.">.
+There will be 4 pages: a landing/home page, a bit about me and why I want to apply, a MTG life total app and a image carousel for my cats, Felt <img src="https://static-cdn.jtvnw.net/emoticons/v2/304327986/default/dark/1.0" alt="A small picture of a black and white kitten's face mid yawn making it look like they are screaming."> and Noodle <img src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_63c13dc4aa904e64963a8886eca85db0/default/dark/1.0" alt="A small picture of a white kitten's face mid yawn making it look like they are screaming.">.
 
 ### Functionality
 
