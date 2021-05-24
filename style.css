@@ -82,6 +82,7 @@ main {
     border: var(--streamGreen);
     border-width: var(--borderWidth);
     border-style: solid;
+    padding: 5% 0px 5% 0px;
 }
 
 .menuContent {
