@@ -94,14 +94,18 @@ main {
 } /* ...except the home section */
 
 p {
-    font-size: 2vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    font-size: 5vw;
+    width: 90%;
+    align-self: center;
+    text-align: justify;
+    text-justify: auto;
+    margin: 0px 5% 0px 5%;
 }
 
 h1 {
-    font-size: 7vw;
-    margin: 0 5vw 0 5vw;
+    font-size: 6vw;
+    width: 80%;
+    margin: 0px 5% 0px 5%;
 }
 
 img {
@@ -120,20 +124,20 @@ img {
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: 25%;
+        width: 20%;
         border-width: var(--borderWidth) 0px 0px 0px;
     }
 
     main {
         height: 100%;
-        width: 75%;
+        width: 80%;
     }
 
     .menuButton {
         height: 25%;
         width: 100%;
         border-width: 0px 0px var(--borderWidth) var(--borderWidth);
-        font-size: 8vw;
+        font-size: 6vw;
         letter-spacing: 0.1em;
     }
 }
