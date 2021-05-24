@@ -64,6 +64,8 @@ const startLifeTotal = document.getElementById("setupLife");
 
 const setupSubmitButton = document.getElementById("gameSetupSubmit");
 
+const playersArr = Array.from(document.getElementsByClassName("player"));
+
 const plusFiveButtons = Array.from(document.getElementsByClassName("+5"));
 
 const plusOneButtons = Array.from(document.getElementsByClassName("+1"));
@@ -78,13 +80,44 @@ const resetLifeTotalButtons = Array.from(document.getElementsByClassName("resetL
 
 // Magic Event Listeners
 
-setupSubmitButton.addEventListener("click", setupGame)
+setupSubmitButton.addEventListener("click", setupGame);
 
 // Magic Functions
 
 function setupGame (event) {
-    event.preventDefault()
+    event.preventDefault();
+
+    let lives = {
+        life1: parseInt(startLifeTotal.value), 
+        life2: parseInt(startLifeTotal.value), 
+        life3: parseInt(startLifeTotal.value), 
+        life4: parseInt(startLifeTotal.value)
+    }
+
     console.log(numOfPlayers.value)
+
+    switch (numOfPlayers.value) {
+        case "2":
+            console.log("2 Players!")
+            playersArr[0].style.display = "flex";
+            playersArr[1].style.display = "flex";
+            
+            break;
+        
+        case "3":
+            console.log("3 Players!")
+            playersArr[0].style.display = "flex";
+            playersArr[1].style.display = "flex";
+            playersArr[2].style.display = "flex";
+            
+            break;
+
+        case "4":
+            console.log("4 Players!")
+            playersArr.forEach(e => e.style.display = "flex")
+        
+            break;
+    }
 }
 
 
