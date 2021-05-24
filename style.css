@@ -141,4 +141,8 @@ img {
         font-size: 6vw;
         letter-spacing: 0.1em;
     }
+
+    p {
+        font-size: 2vw;
+    }
 }
