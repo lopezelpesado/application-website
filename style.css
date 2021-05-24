@@ -1,11 +1,10 @@
 :root {
     --streamGreen: hsl(121, 100%, 49%); /* Not far from chartreuse */
-    --borderWidth: 7px;
-    --boxShadowSize: 18px;
-    --inBoxShadowSize: -25px;
-    --textShadow: 20px;
+    --borderWidth: 1vw;
+    --boxShadowSize: 3vw;
+    --textShadow: 3vw;
     --scanlineStrength: 5%;
-    --scanlineSize: 4px;
+    --scanlineSize: 0.5vw;
 }
 
 html {
@@ -22,9 +21,6 @@ body {
     display: flex;
     flex-direction: column-reverse; /* Puts menu at the bottom */
     height: 100%;
-    /* border: var(--streamGreen);
-    border-width: var(--borderWidth, 10px);
-    border-style: solid; */
     color: var(--streamGreen);
     background-color: black;
     font-family: 'VT323', monospace;
@@ -55,18 +51,19 @@ nav {
     height: 100%;
     width: 25%;
     border: var(--streamGreen);
-    border-width: 0px var(--borderWidth, 10px) 0px 0px;
+    border-width: 0px var(--borderWidth) 0px 0px;
     border-style: solid;
     color: inherit;
     background-color: inherit;
     font-family: inherit;
-    font-size: 8vw;
+    font-size: 125%;
     text-shadow: inherit;
     box-shadow: 0px 0px var(--boxShadowSize) 0px var(--streamGreen) inset;
-    letter-spacing: 10px;
+    letter-spacing: 0.25em;
     align-self: center;
     padding: 0px;
     display: block;
+    font-weight: lighter;
 }
 
 .active {
@@ -83,7 +80,7 @@ main {
     overflow-y: auto;
     overflow-x: hidden;
     border: var(--streamGreen);
-    border-width: var(--borderWidth, 10px);
+    border-width: var(--borderWidth);
     border-style: solid;
 }
 
@@ -112,3 +109,10 @@ img {
     width: 80vw;
     align-self: center;
 }
+
+/* @media only screen and (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+} */
