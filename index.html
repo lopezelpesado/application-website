@@ -57,74 +57,88 @@
 
             <!-- Magic -->
             <section id="magicContent" class="magic menuContent">
-                <form id="players">
+                <form id="gameSetup">
                     <label for="players">How many players?</label>
 
-                    <select name="players" id="players">
+                    <select name="numberOfPlayers" id="setupPlayers">
                         <option value="2">2</option>
 
                         <option value="3">3</option>
 
                         <option value="4">4</option>
                     </select>
+                    
+                    <label for="startingLife">Starting life total:</label>
+                    
+                    <input type="number" id="setupLife" name="startingLife" min="20" step="1" placeholder="20" list="lifeList">
 
-                    <input type="submit" value="SUBMIT">
+                    <datalist id="lifeList">
+                        <option value="20"></option>
+                        
+                        <option value="25"></option>
+                        
+                        <option value="40"></option>
+                    </datalist>
+
+                    <button id="gameSetupSubmit">SUBMIT</button>
                 </form>
 
-                <section id="p1">
-                    <button type="button" class="+5">+5</button>
-        
-                    <button type="button" class="+1">+1</button>
+                <section id="lifeCounters">
+                    <section id="p1">
+                        <button type="button" class="+5">+5</button>
+            
+                        <button type="button" class="+1">+1</button>
 
-                    <p id="life"></p>
+                        <p class="life">20</p>
 
-                    <button type="button" class="-1">-1</button>
+                        <button type="button" class="-1">-1</button>
 
-                    <button type="button" class="-5">-5</button>
+                        <button type="button" class="-5">-5</button>
 
-                    <button type="button" class="resetLifeTotal">Reset</button>
-                </section>
-                
-                <section id="p2">
-                    <button type="button" class="+5">+5</button>
-        
-                    <button type="button" class="+1">+1</button>
+                        <button type="button" class="resetLifeTotal">Reset</button>
+                    </section>
+                    
+                    <section id="p2">
+                        <button type="button" class="+5">+5</button>
+            
+                        <button type="button" class="+1">+1</button>
 
-                    <p id="life"></p>
+                        <p class="life">20</p>
 
-                    <button type="button" class="-1">-1</button>
+                        <button type="button" class="-1">-1</button>
 
-                    <button type="button" class="-5">-5</button>
+                        <button type="button" class="-5">-5</button>
 
-                    <button type="button" class="resetLifeTotal">Reset</button>
-                </section>
+                        <button type="button" class="resetLifeTotal">Reset</button>
+                    </section>
 
-                <section id="p3">
-                    <button type="button" class="+5">+5</button>
-        
-                    <button type="button" class="+1">+1</button>
+                    <section id="p3">
+                        <button type="button" class="+5">+5</button>
+            
+                        <button type="button" class="+1">+1</button>
 
-                    <p id="life"></p>
+                        <p class="life">20</p>
 
-                    <button type="button" class="-1">-1</button>
+                        <button type="button" class="-1">-1</button>
 
-                    <button type="button" class="-5">-5</button>
+                        <button type="button" class="-5">-5</button>
 
-                    <button type="button" class="resetLifeTotal">Reset</button>
-                </section>
+                        <button type="button" class="resetLifeTotal">Reset</button>
+                    </section>
 
-                <section id="p4">
-                    <button type="button" class="+5">+5</button>
-        
-                    <button type="button" class="+1">+1</button>
+                    <section id="p4">
+                        <button type="button" class="+5">+5</button>
+            
+                        <button type="button" class="+1">+1</button>
 
-                    <p id="life"></p>
+                        <p class="life">20</p>
 
-                    <button type="button" class="-1">-1</button>
+                        <button type="button" class="-1">-1</button>
 
-                    <button type="button" class="-5">-5</button>
+                        <button type="button" class="-5">-5</button>
 
-                    <button type="button" class="resetLifeTotal">Reset</button>
+                        <button type="button" class="resetLifeTotal">Reset</button>
+                    </section>
                 </section>
             </section>
 

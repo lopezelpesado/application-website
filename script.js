@@ -56,4 +56,37 @@ function revealSection (clickedButton) { // function to reveal the corresponding
 
 // Magic
 
+// Magic Variables
+
+const numOfPlayers = document.getElementById("setupPlayers");
+
+const startLifeTotal = document.getElementById("setupLife");
+
+const setupSubmitButton = document.getElementById("gameSetupSubmit");
+
+const plusFiveButtons = Array.from(document.getElementsByClassName("+5"));
+
+const plusOneButtons = Array.from(document.getElementsByClassName("+1"));
+
+const minusOneButtons = Array.from(document.getElementsByClassName("-1"));
+
+const minusFiveButtons = Array.from(document.getElementsByClassName("-5"));
+
+const lifeTotals = Array.from(document.getElementsByClassName("life"));
+
+const resetLifeTotalButtons = Array.from(document.getElementsByClassName("resetLifeTotal"));
+
+// Magic Event Listeners
+
+setupSubmitButton.addEventListener("click", setupGame)
+
+// Magic Functions
+
+function setupGame (event) {
+    event.preventDefault()
+    console.log(numOfPlayers.value)
+}
+
+
+
 // Cats
