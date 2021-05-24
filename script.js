@@ -58,9 +58,11 @@ function revealSection (clickedButton) { // function to reveal the corresponding
 
 // Magic Variables
 
+const gameSetup = document.getElementById("gameSetup");
+
 const numOfPlayers = document.getElementById("setupPlayers");
 
-const startLifeTotal = document.getElementById("setupLife");
+const startLifeTotalStr = document.getElementById("setupLife").value;
 
 const setupSubmitButton = document.getElementById("gameSetupSubmit");
 
@@ -78,6 +80,10 @@ const lifeTotals = Array.from(document.getElementsByClassName("life"));
 
 const resetLifeTotalButtons = Array.from(document.getElementsByClassName("resetLifeTotal"));
 
+let startLifeTotalnum;
+
+let lives;
+
 // Magic Event Listeners
 
 setupSubmitButton.addEventListener("click", setupGame);
@@ -87,25 +93,29 @@ setupSubmitButton.addEventListener("click", setupGame);
 function setupGame (event) {
     event.preventDefault();
 
-    let lives = {
-        life1: parseInt(startLifeTotal.value), 
-        life2: parseInt(startLifeTotal.value), 
-        life3: parseInt(startLifeTotal.value), 
-        life4: parseInt(startLifeTotal.value)
+    startLifeTotalnum = parseInt(startLifeTotalStr);
+
+    if (startLifeTotalStr === "") {
+        startLifeTotalnum = 20;
     }
 
-    console.log(numOfPlayers.value)
+    lives = {
+        life1: startLifeTotalnum, 
+        life2: startLifeTotalnum, 
+        life3: startLifeTotalnum, 
+        life4: startLifeTotalnum
+    }
+
+    lifeTotals.forEach((e, i) => e.textContent = Object.values(lives)[i]);
 
     switch (numOfPlayers.value) {
         case "2":
-            console.log("2 Players!")
             playersArr[0].style.display = "flex";
             playersArr[1].style.display = "flex";
             
             break;
         
         case "3":
-            console.log("3 Players!")
             playersArr[0].style.display = "flex";
             playersArr[1].style.display = "flex";
             playersArr[2].style.display = "flex";
@@ -113,11 +123,12 @@ function setupGame (event) {
             break;
 
         case "4":
-            console.log("4 Players!")
             playersArr.forEach(e => e.style.display = "flex")
         
             break;
     }
+
+    gameSetup.style.display = "none";
 }
 
 
