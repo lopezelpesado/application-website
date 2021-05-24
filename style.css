@@ -115,8 +115,26 @@ img {
     align-self: center;
 }
 
+#lifeCounters {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .player {
     display: none;
+    width: 50%;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+}
+
+.life {
+    text-align: center;
+}
+
+.playerName {
+    width: 80%;
 }
 
 @media only screen and (min-width: 768px), (orientation: landscape) {
@@ -148,5 +166,9 @@ img {
 
     p {
         font-size: 2vw;
+    }
+
+    .player {
+        width: 25%;
     }
 }
