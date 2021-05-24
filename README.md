@@ -60,7 +60,13 @@ I can use [this W3Schools How TO](https://www.w3schools.com/howto/howto_js_slide
 Here's a list of stuff I need to do!
 
 - [x] Create the HTML, CSS and JS files
-- [ ] Import and adapt my HTML and CSS from [this repo where I was working on it before](https://github.com/lopezelpesado/old-website)
+- [x] Import and adapt my HTML and CSS from [this repo where I was working on it before](https://github.com/lopezelpesado/old-website)
 - [x] Build the menu system
 - [x] Put the menu along the bottom
-- [ ] Put the menu along the left side when viewed on desktop
+- [x] Put the menu along the left side when viewed on desktop
+- [x] Add JS to reset the scroll bar when switching pages
+- [ ] Import MTG life counter code from [this repo where I was working on it before](https://github.com/lopezelpesado/mtg-life-counter)
+- [ ] Add more counters for more players
+- [ ] Add ability to choose the number of players to display the corresponding number of life counters
+- [ ] Write the Home and About pages and format the text
+- [ ] Build image carousel

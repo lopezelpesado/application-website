@@ -6,6 +6,8 @@ const menuButtonArr = Array.from(document.getElementsByClassName("menuButton"));
 
 const menuContentArr = Array.from(document.getElementsByClassName("menuContent")); // Array of all sections
 
+const main = document.getElementsByTagName("main")[0]; // the main element
+
 // Menu Event Listeners
 
 menuButtonArr.forEach(e => e.addEventListener("click", menuFunction)); // When clicked, each menu button will call menuFunction
@@ -34,10 +36,18 @@ function removeActive () { // function to remove the active class from all menu 
 
 // Unhide selected section and add active class to menu button
 
-function revealSection (section) { // function to reveal the corresponding section of the clicked button
-    document.getElementsByClassName(section)[1].style.display = "flex"; // sets display to block (revealing it) for the second element of all elements with the first class in the class list of the clicked button which is the corresponding section to that button
+function revealSection (clickedButton) { // function to reveal the corresponding section of the clicked button and reset the scroll
 
-    document.getElementsByClassName(section)[0].classList.add("active"); // gives the clicked button the active class
+    section = document.getElementsByClassName(clickedButton)[1]; // assigns to a variable the second element of all elements with the first class in the class list of the clicked button which will be clicked button's corresponding section
+
+    let button = document.getElementsByClassName(clickedButton)[0]; // assigns to a variable the first element of all elements with the first class in the class list of the clicked button which will be the clicked button
+
+    section.style.display = "flex"; // sets display to block (revealing it) for the second element of all elements with the first class in the class list of the clicked button which is the corresponding section to that button
+
+    button.classList.add("active"); // gives the clicked button the active class
+
+    main.scrollTo(0,0); // scrolls main back to the top
+
 }
 
 // Home
