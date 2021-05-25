@@ -82,17 +82,24 @@ main {
     border: var(--streamGreen);
     border-width: var(--borderWidth);
     border-style: solid;
-    padding: 5% 0px 5% 0px;
 }
 
 .menuContent {
     display: none;
     flex-direction: column;
+    padding: 5% 0px 5% 0px;
 } /* All sections will be hidden on page load... */
 
 #homeContent {
     display: flex;
 } /* ...except the home section */
+
+#magicContent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
 
 p {
     font-size: 5vw;
@@ -129,6 +136,12 @@ img {
     align-items: center;
 }
 
+#gameSetup {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 .life {
     text-align: center;
 }
@@ -136,6 +149,13 @@ img {
 .playerName {
     width: 80%;
     text-align: center;
+}
+
+#resetGame {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    align-self: center;
 }
 
 @media only screen and (min-width: 768px), (orientation: landscape) {

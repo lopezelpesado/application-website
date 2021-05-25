@@ -80,7 +80,9 @@ const lifeTotals = Array.from(document.getElementsByClassName("life"));
 
 // const resetLifeTotalButtons = Array.from(document.getElementsByClassName("resetLifeTotal"));
 
-const counterButtons = Array.from(document.getElementById("lifeCounters").getElementsByTagName("button"))
+const counterButtons = Array.from(document.getElementById("lifeCounters").getElementsByTagName("button"));
+
+const resetGame = document.getElementById("resetGame");
 
 let startLifeTotalnum;
 
@@ -91,6 +93,8 @@ let lives;
 setupSubmitButton.addEventListener("click", setupGame);
 
 counterButtons.forEach(e => e.addEventListener("click", functionFinder));
+
+resetGame.addEventListener("click", resetGameFunction);
 
 // Magic Functions
 
@@ -129,12 +133,14 @@ function setupGame (event) {
             break;
 
         case "4":
-            playersArr.forEach(e => e.style.display = "flex")
+            playersArr.forEach(e => e.style.display = "flex");
         
             break;
     }
 
     gameSetup.style.display = "none";
+
+    resetGame.style.display = "block";
 }
 
 // Display current life totals
@@ -149,8 +155,6 @@ function displayLife() {
         let buttonType = event.target.classList[0];
 
         let buttonPlayer = event.target.parentElement.id;
-
-        console.log(parseInt(buttonType[1]))
 
         switch (buttonType[0]) {
             case "+":
@@ -180,10 +184,35 @@ function displayLife() {
         },
 
         "reset": function(p) {
-            lives[p] = startLifeTotalnum;
 
-            displayLife();
+            let pName =  document.getElementById(p).getElementsByTagName("input")[0].value === "" ? `Player ${p[1]}` : p1.getElementsByTagName("input")[0].value
+
+            let message = `That's a nice life total ${pName} has there, shame if something were to happen to it...\n\nPress OK to reset their life total\n\nPress Cancel to spare it`
+
+            let confirmation = confirm(message);
+
+            if (confirmation) {
+                lives[p] = startLifeTotalnum;
+
+                displayLife();
+            }
+            
         },
+    }
+
+    // Reset the game
+
+    function resetGameFunction () {
+        let confirmation = confirm("That's a nice game you got there, shame if something were to happen to it...\n\nPress OK to end the game\n\nPress Cancel to spare it");
+
+        if (confirmation) {
+            gameSetup.style.display = "flex";
+
+            playersArr.forEach(e => e.style.display = "none");
+
+            resetGame.style.display = "none";
+        }
+        
     }
 
 // Cats
