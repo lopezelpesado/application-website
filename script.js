@@ -62,7 +62,7 @@ const gameSetup = document.getElementById("gameSetup");
 
 const numOfPlayers = document.getElementById("setupPlayers");
 
-const startLifeTotalStr = document.getElementById("setupLife").value;
+const startLifeTotal = document.getElementById("setupLife");
 
 const setupSubmitButton = document.getElementById("gameSetupSubmit");
 
@@ -93,9 +93,9 @@ setupSubmitButton.addEventListener("click", setupGame);
 function setupGame (event) {
     event.preventDefault();
 
-    startLifeTotalnum = parseInt(startLifeTotalStr);
+    startLifeTotalnum = parseInt(startLifeTotal.value);
 
-    if (startLifeTotalStr === "") {
+    if (startLifeTotal.value === "") {
         startLifeTotalnum = 20;
     }
 
