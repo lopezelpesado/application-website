@@ -69,6 +69,7 @@ Here's a list of stuff I need to do!
 - [x] Add more counters for more players
 - [x] Add ability to choose the number of players to display the corresponding number of life counters
 - [x] Add reset game option
+- [ ] Style the life counter elements
 - [ ] Add winner message
 - [ ] Write the Home and About pages and format the text
 - [ ] Build image carousel
