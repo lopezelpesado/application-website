@@ -72,3 +72,5 @@ Here's a list of stuff I need to do!
 - [ ] Add winner message
 - [ ] Write the Home and About pages and format the text
 - [ ] Build image carousel
+- [ ] Add img filter and glow
+- [ ] Add option to turn off img filter/glow
