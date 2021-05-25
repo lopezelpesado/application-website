@@ -65,10 +65,10 @@ Here's a list of stuff I need to do!
 - [x] Put the menu along the bottom
 - [x] Put the menu along the left side when viewed on desktop
 - [x] Add JS to reset the scroll bar when switching pages
-- [ ] Import MTG life counter code from [this repo where I was working on it before](https://github.com/lopezelpesado/mtg-life-counter)
+- [x] Import MTG life counter code from [this repo where I was working on it before](https://github.com/lopezelpesado/mtg-life-counter)
 - [x] Add more counters for more players
 - [x] Add ability to choose the number of players to display the corresponding number of life counters
-- [ ] Add reset game option
+- [x] Add reset game option
 - [ ] Add winner message
 - [ ] Write the Home and About pages and format the text
 - [ ] Build image carousel
