@@ -68,17 +68,19 @@ const setupSubmitButton = document.getElementById("gameSetupSubmit");
 
 const playersArr = Array.from(document.getElementsByClassName("player"));
 
-const plusFiveButtons = Array.from(document.getElementsByClassName("+5"));
+// const plusFiveButtons = Array.from(document.getElementsByClassName("+5"));
 
-const plusOneButtons = Array.from(document.getElementsByClassName("+1"));
+// const plusOneButtons = Array.from(document.getElementsByClassName("+1"));
 
-const minusOneButtons = Array.from(document.getElementsByClassName("-1"));
+// const minusOneButtons = Array.from(document.getElementsByClassName("-1"));
 
-const minusFiveButtons = Array.from(document.getElementsByClassName("-5"));
+// const minusFiveButtons = Array.from(document.getElementsByClassName("-5"));
 
 const lifeTotals = Array.from(document.getElementsByClassName("life"));
 
-const resetLifeTotalButtons = Array.from(document.getElementsByClassName("resetLifeTotal"));
+// const resetLifeTotalButtons = Array.from(document.getElementsByClassName("resetLifeTotal"));
+
+const counterButtons = Array.from(document.getElementById("lifeCounters").getElementsByTagName("button"))
 
 let startLifeTotalnum;
 
@@ -88,7 +90,11 @@ let lives;
 
 setupSubmitButton.addEventListener("click", setupGame);
 
+counterButtons.forEach(e => e.addEventListener("click", functionFinder));
+
 // Magic Functions
+
+// Setup Function
 
 function setupGame (event) {
     event.preventDefault();
@@ -100,13 +106,13 @@ function setupGame (event) {
     }
 
     lives = {
-        life1: startLifeTotalnum, 
-        life2: startLifeTotalnum, 
-        life3: startLifeTotalnum, 
-        life4: startLifeTotalnum
+        p1: startLifeTotalnum, 
+        p2: startLifeTotalnum, 
+        p3: startLifeTotalnum, 
+        p4: startLifeTotalnum
     }
 
-    lifeTotals.forEach((e, i) => e.textContent = Object.values(lives)[i]);
+    displayLife();
 
     switch (numOfPlayers.value) {
         case "2":
@@ -131,6 +137,53 @@ function setupGame (event) {
     gameSetup.style.display = "none";
 }
 
+// Display current life totals
 
+function displayLife() {
+    lifeTotals.forEach((e, i) => e.textContent = Object.values(lives)[i]);
+}
+
+// Life count functions
+
+    function functionFinder (event) {
+        let buttonType = event.target.classList[0];
+
+        let buttonPlayer = event.target.parentElement.id;
+
+        console.log(parseInt(buttonType[1]))
+
+        switch (buttonType[0]) {
+            case "+":
+                counterFunctions.add(buttonPlayer, parseInt(buttonType[1]));
+                break;
+
+            case "-":
+                counterFunctions.subtract(buttonPlayer, parseInt(buttonType[1]));
+                break;
+            case "r":
+                counterFunctions.reset(buttonPlayer);
+                break;
+        }
+    }
+
+    const counterFunctions = {
+        "add": function(p, n) {
+            lives[p]+=n;
+
+            displayLife();
+        },
+
+        "subtract": function(p, n) {
+            lives[p]-=n;
+
+            displayLife();
+        },
+
+        "reset": function(p) {
+            lives[p] = startLifeTotalnum;
+
+            displayLife();
+        },
+    }
 
 // Cats
