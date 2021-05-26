@@ -69,9 +69,11 @@ Here's a list of stuff I need to do!
 - [x] Add more counters for more players
 - [x] Add ability to choose the number of players to display the corresponding number of life counters
 - [x] Add reset game option
+- [ ] Write the Home and About pages and format the text
+- [ ] Remove image hotlinking
+- [ ] Build image carousel
+- [ ] Style button hover
 - [ ] Style the life counter elements
 - [ ] Add winner message
-- [ ] Write the Home and About pages and format the text
-- [ ] Build image carousel
 - [ ] Add img filter and glow
 - [ ] Add option to turn off img filter/glow
