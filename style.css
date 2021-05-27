@@ -69,7 +69,7 @@ nav {
 .active {
     font-weight: bolder;
     text-shadow: 0px 0px calc(2 * var(--textShadow)) var(--streamGreen);
-    background-color: hsla(121, 100%, 49%, 0.2);
+    background-color: hsla(120, 19%, 12%, 0.2);
 }
 
 main {
@@ -87,12 +87,26 @@ main {
 .menuContent {
     display: none;
     flex-direction: column;
-    padding: 5% 0px 5% 0px;
+    padding: 5% 5% 5% 5%;
 } /* All sections will be hidden on page load... */
 
 #homeContent {
     display: flex;
 } /* ...except the home section */
+
+#textWithImg {
+    display: grid;
+    grid-template-columns: 67% 33%;
+    grid-template-rows: auto;
+}
+
+#pButtonLocMob {
+    display: block;
+}
+
+#pButtonLocDesk {
+    display: none;
+}
 
 #magicContent {
     position: relative;
@@ -103,23 +117,27 @@ main {
 
 p {
     font-size: 5vw;
-    width: 90%;
-    align-self: center;
     text-align: justify;
     text-justify: auto;
-    margin: 0px 5% 0px 5%;
+    margin: 5% 0 0 0;
+}
+
+a {
+    color: hsl(121, 100%, 66%);
+}
+
+a:visited {
+    color: hsl(121, 100%, 33%);
 }
 
 h1 {
     font-size: 6vw;
-    width: 80%;
-    margin: 0px 5% 0px 5%;
 }
 
 img {
     filter: saturate(0);
-    width: 80%;
-    align-self: center;
+    width: 100%;
+    /* align-self: center; */
 }
 
 #lifeCounters {
@@ -187,6 +205,15 @@ img {
 
     p {
         font-size: 2vw;
+        margin: 2% 0 0 0;
+    }
+
+    #pButtonLocMob {
+        display: none;
+    }
+    
+    #pButtonLocDesk {
+        display: block;
     }
 
     .player {
