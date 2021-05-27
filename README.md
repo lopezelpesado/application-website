@@ -72,7 +72,7 @@ Here's a list of stuff I need to do!
 - [x] Write the Home and About pages and format the text
 - [x] Change link styling
 - [x] Remove image hotlinking
-- [ ] Build image carousel
+- [x] Build image carousel
 - [ ] Style button hover
 - [ ] Style the life counter elements
 - [ ] Add winner message

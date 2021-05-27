@@ -136,7 +136,7 @@ h1 {
 }
 
 img {
-    filter: saturate(0);
+    /* filter: saturate(0); */
     width: 100%;
     /* align-self: center; */
 }
@@ -191,6 +191,22 @@ img {
     position: absolute;
     bottom: 0;
     align-self: center;
+}
+
+#fluff {
+    display: block;
+}
+
+#prev, #next {
+    display: none;
+}
+
+#slideshow {
+    display: none;
+}
+
+.slide {
+    display: none;
 }
 
 @media only screen and (min-width: 768px), (orientation: landscape) {
@@ -251,5 +267,35 @@ img {
 
     .player {
         width: 25%;
+    }
+
+    #catsContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 2% 2% 2% 2%;
+    }
+
+    #fluff {
+        display: none;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    #prev, #next {
+        display: block;
+    }
+
+    #slideshow {
+        display: block;
+        align-self: center;
+        width: 100%;
+    }
+
+    .activeSlide {
+        display: block;
+        max-width: 100%;
     }
 }

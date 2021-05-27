@@ -216,3 +216,47 @@ function displayLife() {
     }
 
 // Cats
+
+// Cats Variables
+
+const prevButton = document.getElementById("prev");
+
+const nextButton = document.getElementById("next");
+
+const slides = Array.from(document.getElementsByClassName("slide"));
+
+console.log(slides);
+
+let currentSlide = 0;
+
+// Cats Event Listeners
+
+prevButton.addEventListener("click", sorryGoBack);
+
+nextButton.addEventListener("click", nextSlidePlease);
+
+// Cats Functions
+
+function sorryGoBack () {
+    slides[currentSlide].classList.toggle("activeSlide");
+
+    currentSlide--;
+
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+    }
+
+    slides[currentSlide].classList.toggle("activeSlide");
+}
+
+function nextSlidePlease () {
+    slides[currentSlide].classList.toggle("activeSlide");
+
+    currentSlide++;
+
+    if (currentSlide > slides.length - 1) {
+        currentSlide = 0;
+    }
+
+    slides[currentSlide].classList.toggle("activeSlide");
+}
