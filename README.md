@@ -70,6 +70,7 @@ Here's a list of stuff I need to do!
 - [x] Add ability to choose the number of players to display the corresponding number of life counters
 - [x] Add reset game option
 - [ ] Write the Home and About pages and format the text
+- [ ] Change link styling
 - [ ] Remove image hotlinking
 - [ ] Build image carousel
 - [ ] Style button hover
