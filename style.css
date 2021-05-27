@@ -132,12 +132,29 @@ a:visited {
 
 h1 {
     font-size: 6vw;
+    margin: 0;
 }
 
 img {
     filter: saturate(0);
     width: 100%;
     /* align-self: center; */
+}
+
+#gameSetup label {
+    font-size: 7vw;
+}
+
+#gameSetup select {
+    font-size: 5vw;
+}
+
+#gameSetup input {
+    font-size: 5vw;
+}
+
+#gameSetup button {
+    font-size: 5vw;
 }
 
 #lifeCounters {
@@ -206,6 +223,22 @@ img {
     p {
         font-size: 2vw;
         margin: 2% 0 0 0;
+    }
+
+    label {
+        font-size: 2vw;
+    }
+    
+    select {
+        font-size: 2vw;
+    }
+
+    input {
+        font-size: 2vw;
+    }
+
+    button {
+        font-size: 2vw;
     }
 
     #pButtonLocMob {
