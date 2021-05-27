@@ -10,13 +10,13 @@ I'll try to put some of my ideas for my website here broken down into different 
 
 I'm going for an old school computer-y look. Everything will be green and black with "scanlines" on top of everything. Something like this:
 
-<img src="/images/README/oldcomputer" alt="An old computer with a green display."/>
+<img src="/images/README/oldcomputer.jpeg" alt="An old computer with a green display."/>
 
-<img src="/images/README/falloutcomputer" alt="A screenshot from the video game Fallout 4 showing a black computer screen with green text on it."/>
+<img src="/images/README/falloutcomputer.jpg" alt="A screenshot from the video game Fallout 4 showing a black computer screen with green text on it."/>
 
 I've created a card for my stream using Photoshop in this style and I want to recreate that look using CSS:
 
-<img src="/images/README/streamcard" alt='Green text in a old school computer font that reads "PLEASE STAND BY" against a black background with faint lines accross the whole image.'/>
+<img src="/images/README/streamcard.png" alt='Green text in a old school computer font that reads "PLEASE STAND BY" against a black background with faint lines accross the whole image.'/>
 
 All images displayed on the page will be green and black. I can use CSS to achieve this.
 
@@ -25,7 +25,7 @@ All images displayed on the page will be green and black. I can use CSS to achie
 
 I wanted to go for a vertical menu bar similar to that found in Alien: Isolation where selecting the menu item on the left changes the content on the right:
 
-<img src="/images/README/aliencomputer" alt="A screenshot from the video game Alien: Isolation showing a green computer screen with white text on it."/>
+<img src="/images/README/aliencomputer.jpg" alt="A screenshot from the video game Alien: Isolation showing a green computer screen with white text on it."/>
 
 The content on the right will be scrollable so that you always have the menu bar and border fixed on screen.
 
@@ -33,7 +33,7 @@ I'll design for mobile first so that by default the menu bar will be at the bott
 
 ### Content
 
-There will be 4 pages: a landing/home page, a bit about me and why I want to apply, a MTG life total app and a image carousel for my cats, Felt <img src="/images/README/smollestfelt" alt="A small picture of a black and white kitten's face mid yawn making it look like they are screaming."> and Noodle <img src="/images/README/smollestnoodle" alt="A small picture of a white kitten's face mid yawn making it look like they are screaming.">.
+There will be 4 pages: a landing/home page, a bit about me and why I want to apply, a MTG life total app and a image carousel for my cats, Felt <img src="/images/README/smollestfelt.jpg" alt="A small picture of a black and white kitten's face mid yawn making it look like they are screaming."> and Noodle <img src="/images/README/smollestnoodle.jpg" alt="A small picture of a white kitten's face mid yawn making it look like they are screaming.">.
 
 ### Functionality
 
