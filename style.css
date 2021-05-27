@@ -135,6 +135,29 @@ h1 {
     margin: 0;
 }
 
+button {
+    /* /* height: 100%; */
+    width: 100%;
+    border: var(--streamGreen);
+    /* border-width: 0px var(--borderWidth) 0px 0px; */
+    border-style: solid;
+    color: inherit;
+    background-color: inherit;
+    font-family: inherit;
+    /* font-size: vw; */
+    text-shadow: inherit;
+    box-shadow: 0px 0px calc(0.25 * var(--boxShadowSize)) 0px var(--streamGreen) inset;
+    /* letter-spacing: 0.25em; */
+    align-self: center;
+    /* padding: 0px; */
+    display: block;
+    font-weight: lighter;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 img {
     /* filter: saturate(0); */
     width: 100%;
@@ -163,13 +186,36 @@ img {
     flex-wrap: wrap;
 }
 
+/* select {
+    color: inherit;
+    background-color: inherit;
+    border-style: solid;
+    border-color: inherit;
+    font-family: inherit;
+}
+
+playerNumOption {
+    background-color: black;
+} */
+
 .player {
     display: none;
     width: 50%;
     flex-direction: column;
-    padding: 5%;
+    padding: 2%;
     align-items: center;
 }
+
+/* input {
+    font-family: inherit;
+    width: 100%;
+    background-color: inherit;
+    color: inherit;
+    border-color: inherit;
+    padding: 0;
+    text-shadow: inherit;
+    border-style: solid;
+} */
 
 #gameSetup {
     display: flex;
@@ -177,13 +223,25 @@ img {
     align-self: center;
 }
 
+#resetGame {
+    height: 5vmax;
+}
+
 .life {
     text-align: center;
 }
 
 .playerName {
-    width: 80%;
+    /* width: 80%; */
     text-align: center;
+    font-family: inherit;
+    width: 100%;
+    background-color: inherit;
+    color: inherit;
+    border-color: inherit;
+    padding: 0;
+    text-shadow: inherit;
+    border-style: solid;
 }
 
 #resetGame {
@@ -285,6 +343,8 @@ img {
 
     #prev, #next {
         display: block;
+        width: inherit;
+        height: 100%;
     }
 
     #slideshow {
