@@ -185,7 +185,7 @@ function displayLife() {
 
         "reset": function(p) {
 
-            let pName =  document.getElementById(p).getElementsByTagName("input")[0].value === "" ? `Player ${p[1]}` : p1.getElementsByTagName("input")[0].value
+            let pName =  document.getElementById(p).getElementsByTagName("input")[0].value === "" ? `Player ${p[1]}` : document.getElementById(p).getElementsByTagName("input")[0].value
 
             let message = `That's a nice life total ${pName} has there, shame if something were to happen to it...\n\nPress OK to reset their life total\n\nPress Cancel to spare it`
 
