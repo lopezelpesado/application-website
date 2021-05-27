@@ -71,7 +71,7 @@ Here's a list of stuff I need to do!
 - [x] Add reset game option
 - [x] Write the Home and About pages and format the text
 - [x] Change link styling
-- [ ] Remove image hotlinking
+- [x] Remove image hotlinking
 - [ ] Build image carousel
 - [ ] Style button hover
 - [ ] Style the life counter elements
