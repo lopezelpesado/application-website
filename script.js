@@ -84,6 +84,8 @@ const counterButtons = Array.from(document.getElementById("lifeCounters").getEle
 
 const resetGame = document.getElementById("resetGame");
 
+const playerNameInputs = Array.from(document.getElementsByClassName("playerName"));
+
 let startLifeTotalnum;
 
 let lives;
@@ -210,6 +212,8 @@ function displayLife() {
 
             playersArr.forEach(e => e.style.display = "none");
 
+            playerNameInputs.forEach(e => e.value = "");
+
             resetGame.style.display = "none";
         }
         
@@ -224,8 +228,6 @@ const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
 
 const slides = Array.from(document.getElementsByClassName("slide"));
-
-console.log(slides);
 
 let currentSlide = 0;
 
