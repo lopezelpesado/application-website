@@ -2,6 +2,8 @@
 
 This README is for my application website for Founders and Coders!
 
+Update 9/6/21: Which got me an interview and now I'm starting next week!!! I'll archive this repository and continue working on the life app in a seperate one.
+
 ## Ideas
 
 I'll try to put some of my ideas for my website here broken down into different sections.
